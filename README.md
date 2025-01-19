@@ -1,1 +1,4 @@
-Learning Companion API Client
+# Learning Companion API Client
+
+API client for Learning Companion.
+

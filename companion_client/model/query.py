@@ -14,12 +14,12 @@ class QueryBase(BaseModel, frozen=True):
 
 
 class SimpleMaterialQuery(QueryBase, frozen=True):
-    group: OptionalGroupType
+    group: OptionalGroupType = None
     seqno: NonNegativeInt | None = None
     topic: SafeStr | None = None
     slot_type: OptionalSlotType = None
 
-    material_type: MaterialTypeDescription
+    material_type: MaterialTypeDescription | None = None
     textual_query: str | None = None
     aggregate: bool = False
 

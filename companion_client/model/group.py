@@ -19,7 +19,7 @@ class MaterialGroup(BaseModel):
     type: MaterialGroupType = MaterialGroupType.SLOT
     topics: Sequence[CourseTopic] | None = None
     section: Section | None = None
-    groups: Sequence[GroupType] = []
+    groups: Sequence[GroupType] | None = None
     slot_id: int | None = None
     slot_title: str | None = None
     slot_description: str | None = None

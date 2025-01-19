@@ -36,8 +36,8 @@ class Material(BaseModel, arbitrary_types_allowed=True, validate_assignment=True
 
     slot_type: SlotTypeDescription | None
     slot_id: NonNegativeInt | None = None
-    start: DateTime | None
-    end: DateTime | None
+    start_date: DateTime | None = None
+    end_date: DateTime | None = None
 
     groups: OptionalMultiGroupType | None
 
